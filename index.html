@@ -7,21 +7,39 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<h1>Maze Solver</h1>
-	<p>Implementation of breadth-first search algorithm in backbone.js</p>
-	<div id="controls">
-		<button class="stateButton" id="maze_btn">Edit Maze</button>
-		<button class="stateButton" id="agent_btn">Edit Agent Position</button>
-		<button class="stateButton" id="goal_btn">Edit Goal</button>
-		<button class="findPath">Find Path</button>
-		<button class="clearPath">Clear Path</button>
-		<button class="clearMaze">Clear Path + Maze</button>
+	<h1>Laberinto</h1>
+	<div class="wrapper">
+		<div class="laberinto">
+			<div id="controls">
+				<button class="stateButton" id="maze_btn">Editar Laberinto</button>
+				<button class="stateButton" id="agent_btn">Editar Inicio</button>
+				<button class="stateButton" id="goal_btn">Editar Final</button>
+				<button class="findPath">Resolver</button>
+				<button class="clearPath">Limpiar Camino</button>
+				<button class="clearMaze">Limpiar Camino y Laberinto</button>
+			</div>
+			<div id="maze">
+				<div class="agent"></div>
+				<div class="goal"></div>
+			</div>
+		</div>
+		<div class="presentation-wrapper">
+			<h5>Integrantes del equipo</h5>
+			<ul>
+				<li>Diego Aaron Figueroa Campos</li>
+				<li>Rafael Alejandro Ochoa Sandoval</li>
+				<li>Brayan Alberto Arroyo Chávez</li>
+				<li>Fernando Manzo Virgen</li>
+				<li>Karina Alvarez Lino</li>
+				<li>Gabriela Salinas Sanchez</li>
+			</ul>
+			<h5>Instituto Tecnológico de Colima</h5>
+			<img class="logo" src="itcolima.svg" alt="100px" srcset="">
+			<h5>Inteligencia Artificial</h5>
+			<p>Noel García Díaz</p>
+		</div>
 	</div>
-	<div id="maze">
-		<div class="agent"></div>
-		<div class="goal"></div>
-	</div>
-	<p class="credits">Built with backbone.js</p>
+
 	<script id="squareTemplate" type="text/template">
 		<%= distance %>
 	</script>
